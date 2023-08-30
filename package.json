@@ -1,0 +1,22 @@
+{
+  "name": "local-cd",
+  "version": "1.0.0",
+  "description": "End-to-end tests for Local coding",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:record:dashboard": "cypress run --record --key 7a008b24-4c94-43e8-bfbc-f75c970197fc --reporter mochawesome",
+    "cy:ci": "cypress run --record",
+    "format": "prettier . --write --list-different",
+    "lint": "prettier . --check"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.13.0"
+  },
+  "dependencies": {
+    "prettier": "^2.8.8"
+  }
+}
